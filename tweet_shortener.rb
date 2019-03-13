@@ -21,12 +21,12 @@ def word_substituter(tweet)
   new3 = []
   new.each do |word|
     if new2.include?(word)
-      new.push(dictionary[word])
+      new3.push(dictionary[word])
     else
-      new.push(word)
+      new3.push(word)
     end
   end
-  new
+  new3
 end
 
 def bulk_tweet_shortener(tweet)
