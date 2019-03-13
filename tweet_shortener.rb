@@ -30,5 +30,6 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
-  puts word_substituter(tweet)
+  tweet.each do |word|
+    puts word_substituter(word)
 end
