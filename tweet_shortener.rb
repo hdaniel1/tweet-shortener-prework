@@ -16,7 +16,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  new = tweet.split()
+  new = tweet.split
   new2 = dictionary.keys
   new3 = []
   new.each do |word|
@@ -30,8 +30,5 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
-  tweet.each do |word|
-    tweet = word_substituter(tweet)
-    puts "#{tweet}"
-  end
+  puts word_substituter(tweet)
 end
