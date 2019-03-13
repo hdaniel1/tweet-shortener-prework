@@ -16,8 +16,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  new = []
+  new = tweet.split()
   new2 = dictionary.keys
+  new3 = []
   new.each do |word|
     if new2.include?(word)
       new.push(dictionary[word])
